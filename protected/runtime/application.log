@@ -1,0 +1,24 @@
+2013/09/21 07:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "giix".' in F:\Xampp\htdocs\yiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\htdocs\yiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('giix')
+#1 F:\Xampp\htdocs\yiiRoot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\mygame\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygame/index.php/giix
+---
+2013/09/21 17:37:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "giix".' in F:\Xampp\htdocs\yiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\htdocs\yiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('giix')
+#1 F:\Xampp\htdocs\yiiRoot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\mygame\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygame/index.php/giix
+---
+2013/09/21 17:38:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "giix/default/login".' in F:\Xampp\htdocs\yiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 F:\Xampp\htdocs\yiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('giix/default/lo...')
+#1 F:\Xampp\htdocs\yiiRoot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 F:\Xampp\htdocs\mygame\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mygame/index.php/giix/default/login
+---
