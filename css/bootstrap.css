@@ -275,6 +275,12 @@ a:hover {
 .span1 {
   width: 60px;
 }
+.span1x {
+  width: 40px;
+}
+.span3x {
+  width: 240px;
+}
 
 .offset12 {
   margin-left: 980px;

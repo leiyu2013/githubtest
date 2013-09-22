@@ -22,7 +22,21 @@
 	<!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->	
+
 </head>
+<script type="text/javascript">  
+function currentTime(){  
+var d = new Date(),str = '';  
+str += d.getFullYear()+'年';  
+str  += d.getMonth() + 1+'月';  
+str  += d.getDate()+'日';  
+str += d.getHours()+'时';  
+str  += d.getMinutes()+'分';  
+str+= d.getSeconds()+'秒';  
+return str;  
+}  
+setInterval(function(){$('#time').html(currentTime)},1000);  
+</script> 
 
 <body>
 	<!-- Navbar -->
@@ -73,17 +87,78 @@
 		<div class="container">
 			<!-- Header boxes -->
 			<div class="box-container">
-				<div class="box-holder">
-					<a href="index-2.html"><div class="box"><span><i class="icon-dashboard"></i></span>Home</div></a>
+				<div class="box-holder1">
+					<div class="box">
+                                            <table width="400px">
+                                                <tr>
+                                                    <td width="32%"><strong>等级/天赋</strong></td>
+                                                    <td width="68%"><?php $level=105;echo $level;?>&nbsp;&nbsp;/&nbsp;&nbsp;<?php $talent=1;echo $talent;?></td>
+                                                    
+                                                </tr>
+                                                 <tr>
+                                                    <td width="16%"><strong>经验</strong></td>
+                                                    <td width="84%"><?php $this->widget('zii.widgets.jui.CJuiProgressBar', array(
+                                                                    'value'=>33,                                           
+                                                                    // additional javascript options for the progress bar plugin
+                                                                    'options'=>array(
+                        //                                                 'change'=>'js:function(event, ui) {...}',
+                                                                    ),
+                                                                    'htmlOptions'=>array(
+                                                                        'style'=>'height:12px;'
+                                                                    ),
+                                                                ));?>
+                                                    </td>
+                                                </tr>
+                                                 <tr>
+                                                    <td width="16%"><strong>体力</strong></td>
+                                                    <td width="84%"><?php $this->widget('zii.widgets.jui.CJuiProgressBar', array(
+                                                                    'value'=>78,                                           
+                                                                    // additional javascript options for the progress bar plugin
+                                                                    'options'=>array(
+                        //                                                 'change'=>'js:function(event, ui) {...}',
+                                                                    ),
+                                                                    'htmlOptions'=>array(
+                                                                        'style'=>'height:12px;'
+                                                                    ),
+                                                                ));?>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!--<div class="span1x"><strong>经验</strong></div>-->
+                                            <!--<div class="span3x">-->
+                                               
+                                        <!--</div>-->
+                                           <tr><td></td></tr>
+                                           <tr><td></td></tr>
+                                       </div>
+                                </div>
+				<div class="box-holder2">						
+					<div class="box">
+                                            <table width="400px">
+                                                <tr>
+                                                    <td width="400"><div align="middle"><div id="time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></div></td>                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
 				</div>
-				<div class="box-holder">						
-					<a href="messages.html"><div class="box"><span><i class="icon-inbox"></i></span>Messages</div></a>
-				</div>
-				<div class="box-holder">						
-					<a href="gallery.html"><div class="box"><span><i class="icon-camera-retro"></i></span>Gallery</div></a>
-				</div>
-				<div class="box-holder">						
-					<a href="user-account.html"><div class="box"><span><i class="icon-globe"></i></span>User information</div></a>
+                            
+                        
+				<div class="box-holder3">						
+					<div class="box">
+                                            <table width="200px">
+                                                <tr>
+                                                    <td width="32%"><strong>符石：</strong></td>
+                                                    <td width="68%"><?php $stone=8888;echo $stone;?></td>                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td width="32%"><strong>金币：</strong></td>
+                                                    <td width="68%"><?php $golden=12345678;echo $golden;?></td>                                                    
+                                                </tr>
+                                            </table>
+                                        </div>
 				</div>
 			</div>
 			<!-- /Header boxes -->
@@ -200,8 +275,8 @@
 
 			<!-- Footer -->
 			<div id="footer">
-<!--				<hr>
-				<p class="pull-right">Company name &copy; 2012</p>-->
+				<hr>
+				<p class="pull-right">Company name &copy; 2012</p>
 			</div>
 			<!-- /Footer -->
 	
@@ -218,3 +293,4 @@
 
 <!-- Mirrored from wbpreview.com/previews/WB01BG165/ by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 16 May 2013 12:37:07 GMT -->
 </html>
+

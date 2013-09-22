@@ -180,21 +180,39 @@ ul.dropdown-menu li .time {
 	display: table-cell;
 }
 
+.box-holder1 {
+	width: 40%;
+	display: table-cell;
+}
+.box-holder2 {
+	width: 40%;
+	display: table-cell;
+}
+
+.box-holder3 {
+	width: 20%;
+	display: table-cell;
+}
+
 .box-holder a {
 	text-decoration: none;
 }
 
 .box {
-	height: 50px;
+	height: 55px;
 	padding: 15px;
 	margin-right: 10px;
-	font-size: 15px;
+	font-size: 18px;
 	text-align: center;
 	color: #4A515B;
 	background: #F5F5F5;
 	border: 1px solid #D5D5D5;
 	border-radius: 5px;
 	text-shadow: 1px 1px 1px #EDEDED;
+}
+
+.box-content {
+        color:green;
 }
 
 .box span {
